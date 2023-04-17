@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="shortcut icon" href="./img/logotipo.ico" type="image/x-icon">
+</head>
+<body>
+    <section class="logo">
+
+        <img src="./img/logotipo.png" alt="logotipo" class="logo-imagem">
+        <p class="logo-texto">Woman Gamers</p>
+
+    </section>
+
+    <nav>
+
+        <a href="index.html" class="nav-link">Página inicial</a>
+        <a href="programacao.html" class="nav-link">Programação</a>
+        <a href="local.html" class="nav-link">Local</a>
+        <a href="formulario.html" class="nav-link">Formulário</a>
+
+    </nav>
+
+    <section class="cabecalho">
+
+        <img src="./img/cabecalho_formulario.png" alt="imagem de cabeçalho" class="cabecalho-imagem">
+        <h1 class="cabecalho-titulo">Formulário</h1>
+
+    </section>
+
+    <section class="formulario">
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome aqui"><br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail aqui"><br><br>
+
+            <label for="participacao">Vai participar?</label><br>
+            <input type="radio" name="partipacao" id="participarei" value="participarei">
+            <label for="participarei">Participarei</label><br>
+            <input type="radio" name="partipacao" id="nao-participarei" value="nao-participarei">
+            <label for="nao-participarei">Não Participarei</label><br><br>
+
+            <label for="formato-participacao">Em qual formato você irá participar?</label><br>
+            <input type="radio" name="formato-participacao" id="presencial" value="pesencial">
+            <label for="presencial">Presencial</label><br>
+            <input type="radio" name="formato-participacao" id="online" value="online">
+            <label for="online">Online</label><br><br>
+
+            <label for="como-ficou-sabendo">Como ficou sabendo do evento?</label><br>
+            <select name="como-ficou-sabendo" id="como-ficou-sabendo">
+                <option value="website">Website</option>
+                <option value="redes-sociais">Redes Sociais</option>
+                <option value="amigo">Amigo</option>
+                <option value="outro">Outro</option>
+            </select><br><br>
+
+            <label for="jogos-preferidos">Conte-nos que tipos de jogos você prefere!</label><br>
+            <textarea name="jogos-preferidos" id="jogos-preferidos" cols="70" rows="5"></textarea><br><br>
+
+            <label for="comentarios">Comentários e perguntas</label><br>
+            <textarea name="comentarios" id="comentarios" cols="70" rows="10"></textarea><br><br>
+
+            <input type="submit" value="Enviar Formulário">
+
+        </form>
+    </section>
+
+    <footer class="rodape">
+
+        <p class="rodape-texto">Criado por Ana Paula da Silva Santos</p>
+
+    </footer>
+</body>
+</html>
