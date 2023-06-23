@@ -1,0 +1,154 @@
+body {
+    background-color: var(--color-second);
+    padding-top: 60px;
+    color: var(--color-text-second);
+}
+
+h1,
+h2,
+h3 {
+    font-family: serif;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+header {
+    background-image: linear-gradient(rgba(51, 31, 59, 0.7), rgba(51, 31, 59, 0.7)), url('../img/cabecalho_local.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;    
+    color: var(--color-text);
+}
+
+a {
+    text-decoration: none;
+}
+
+.div-header {
+    position: fixed;
+    background-color: var(--color-header);
+    width: 100%;
+    display: inline-block;
+    top: 0;
+    height: 60px;
+}
+
+.header-link {
+    display: inline-block;
+    padding: 5px;
+    margin-left: 40px;    
+    color: var(--color-text);
+}
+
+.header-link-img {
+    max-height: 50px;
+    vertical-align: middle;
+}
+
+.header-link-txt {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+.header-nav {
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    padding-right: 40px;
+    padding-top: 21px;
+}
+
+.header-nav-link {
+    padding: 10px;    
+    color: var(--color-text);
+}
+
+.header-nav-link:hover{
+    background-color: var(--color-hover);
+}
+
+.header-txt {
+    text-align: center;
+    padding-top: 110px;
+    width: 40%;
+    margin: auto;
+}
+
+.header-txt-data {
+    padding-bottom: 20px;
+    font-size: 18pt;
+    font-weight: 700;
+}
+
+.header-txt-titulo {
+    border: solid 6px;
+    padding: 44px 56px;
+    font-size: 56px;
+    font-weight: 700;
+    font-family: serif;
+}
+
+main {
+    font-size: 16px;
+    max-width: 80%;
+    height: min-content;
+    margin: auto;
+    text-align: left;
+    padding: 40px 20px 60px 20px;
+    line-height: 1.75;
+}
+
+.local-texto{
+    padding: 20px;
+}
+
+.local-titulo{
+    padding: 20px;
+    font-size: 18px;
+}
+
+.div-local-botao {
+    margin: 20px auto;
+    border: solid 1px;
+    border-radius: 4px;
+    padding: 6px;
+    text-align: center;
+    height: 60%;
+    width: 50%;
+}
+
+.div-local-botao:hover {
+    background-color: var(--color-hover-second);
+}
+
+.div-mapa {
+    padding: 20px;
+    margin: auto;
+}
+
+.local-mapa {
+    width: 100%;
+}
+
+.rodape {
+    background-color: var(--color-footer);
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    bottom: 0;
+}
+
+.rodape-texto {
+    color: var(--color-text-footer);
+}
