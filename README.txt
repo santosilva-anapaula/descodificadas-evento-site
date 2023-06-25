@@ -1,1 +1,1 @@
-Site em desemvolvimento conforme mentoria do programa descodificadas.
+Site em desenvolvimento conforme mentoria do programa descodificadas.
