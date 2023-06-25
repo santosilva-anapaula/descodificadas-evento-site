@@ -1,160 +1,150 @@
-body {
-    background-color: var(--color-second);
-    padding-top: 60px;
-    color: var(--color-text-second);
-}
-
-h1,
-h2,
-h3 {
-    font-family: serif;
-}
-
-h1 {
-    font-size: 32px;
-}
-
-h2 {
-    font-size: 24px;
-}
-
-h3 {
-    font-size: 20px;
-}
-
 header {
-    background-image: linear-gradient(rgba(51, 31, 59, 0.7), rgba(51, 31, 59, 0.7)), url('../img/cabecalho_local.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 400px;    
-    color: var(--color-text);
+    margin-top: 4.3em;
+    width: 100%;
+}
+
+.div-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--color-header);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    max-height: 5em;
 }
 
 a {
     text-decoration: none;
 }
 
-.div-header {
-    position: fixed;
-    background-color: var(--color-header);
-    width: 100%;
-    display: inline-block;
-    top: 0;
-    height: 60px;
-}
-
 .header-link {
-    display: inline-block;
-    padding: 5px;
-    margin-left: 40px;    
-    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    flex-grow: 0.5;
+
 }
 
 .header-link-img {
+    max-width: 50px;
     max-height: 50px;
-    vertical-align: middle;
+    margin-left: 5%;
 }
 
 .header-link-txt {
-    display: inline-block;
-    margin-left: 10px;
-    font-size: 22px;
-}
-
-.header-nav {
-    position: absolute;
-    display: inline-block;
-    right: 0;
-    padding-right: 40px;
-    padding-top: 21px;
-}
-
-.header-nav-link {
-    padding: 10px;    
+    font-family: serif;
+    font-size: 1.8em;
+    margin-left: 0.5em;
     color: var(--color-text);
 }
 
-.header-nav-link:hover{
+.header-nav {
+    flex-grow: 1;
+    text-align: end;
+    margin-right: 2%;
+}
+
+.header-nav-link {
+    font-size: 1em;
+    padding: 1%;
+    color: var(--color-text);
+}
+
+.header-nav-link:hover {
     background-color: var(--color-hover);
 }
 
-.header-txt {
-    text-align: center;
-    padding-top: 110px;
-    width: 40%;
-    margin: auto;
-}
-
-.header-txt-data {
-    padding-bottom: 20px;
-    font-size: 18pt;
-    font-weight: 700;
+.banner {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background-image: linear-gradient(rgba(51, 31, 59, 0.7), rgba(51, 31, 59, 0.7)), url('../img/cabecalho_formulario.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
 }
 
 .header-txt-titulo {
-    border: solid 6px;
-    padding: 44px 56px;
-    font-size: 56px;
-    font-weight: 700;
+    flex-grow: 1;
+    font-size: 4em;
     font-family: serif;
+    font-weight: bold;
+    color: var(--color-text);
+    padding: 2%;
+    margin: 2% 30% 5% 30%;
+    border: solid 0.1em;
+    text-align: center;
+}
+
+body {
+    background-color: var(--color-second);
 }
 
 main {
-    font-size: 16px;
-    max-width: 80%;
-    height: min-content;
-    margin: auto;
-    text-align: left;
-    padding: 40px 20px 60px 20px;
-    line-height: 1.75;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 2em;
+    color: var(--color-text-second);
 }
 
 .div-form {
     margin: auto;
-    width: 60%;
+    width: 70%;
 }
 
 form {
-    padding: 20px;
-    font-size: 16px;
+    font-size: 1.1em;
 }
 
-.input{
+.input {
     width: 100%;
-    height: 30px;
+    height: 2em;
     border-radius: 10px;
-    padding: 8px;
-    font-size: 16px;
+    padding: 1%;
+    font-size: 1em;
+    color: var(--color-text-form);
+    box-shadow: 3px 3px 10px var(--color-shadow);
 }
 
-select{
+select {
     border-radius: 8px;
-    font-size: 16px;
-    padding: 8px;
-    margin-top: 10px;
+    font-size: 1em;
+    padding: 1%;
+    margin-top: 1%;
+    color: var(--color-text-form);
+    box-shadow: 3px 3px 10px var(--color-shadow);
 }
 
 textarea {
     border-radius: 8px;
-    font-size: 16px;
-    padding: 8px;
-    margin-top: 10px;
+    font-size: 1em;
+    padding: 1%;
+    margin-top: 1%;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-text-form);
+    box-shadow: 3px 3px 10px var(--color-shadow);
 }
 
 .div-formulario-botao {
-    margin: 20px auto;
+    margin: 5% auto;
     border: solid 1px;
     border-radius: 4px;
-    padding: 6px;
+    padding: 1%;
     text-align: center;
     height: 60%;
     width: 50%;
 }
 
 .botao-formulario {
-    font-size: 16px;
+    font-size: 1em;
     background: none;
     color: var(--color-text-second);
 }
@@ -166,9 +156,8 @@ textarea {
 .rodape {
     background-color: var(--color-footer);
     text-align: center;
-    padding: 20px;
-    font-size: 16px;
-    bottom: 0;
+    padding: 2%;
+    font-size: 1em;
 }
 
 .rodape-texto {
